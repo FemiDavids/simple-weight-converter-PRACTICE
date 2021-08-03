@@ -1,0 +1,76 @@
+:root {
+    --grams-color: hsl(211, 80%, 49%);
+    --kilo-color: hsl(135, 70%, 54%);
+    --ounce-color: hsl(9, 87%, 61%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: dimgray;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'roboto', sans-serif;
+    line-height: 1.6;
+    color: hsl(0, 0%, 100%);
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color:burlywood;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+p.title {
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+}
+
+.form__input input {
+    width: 100%;
+    padding: 10px;
+}
+
+.form__output {
+    width: 100%;
+    min-height: 276px;
+    overflow: hidden;
+}
+
+.form__output .output {
+    width: 100%;
+    padding: 20px;
+}
+
+.form__output .output > div {
+    width: 100%;
+    height: 25px;
+}
+
+.form__output .output-1 {
+    background-color: var(--grams-color);
+}
+
+.form__output .output-2 {
+    background-color: var(--kilo-color);
+}
+
+.form__output .output-3 {
+    background-color: var(--ounce-color);
+}
